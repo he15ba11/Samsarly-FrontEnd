@@ -181,8 +181,11 @@ input[value="Sign Up"] {
 }
 @media (max-width: 750px) {
   .form-box {
-    width: 98%;
+    width: 85%;
     height: 80%;
+  }
+  form{
+    width:98%;
   }
   .container .form-box form svg.fa-envelope {
     top: 60px;
