@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/sign-in.css">
+    <link rel="stylesheet" href="css/sign-up.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="logo">
+                <img src="images/samsarly-logo-light.png" alt="samsarly">
+            </div>
+            <div class="txt">
+                <h3 class="sign-in"><a href="index.html">sign in</a></h3>
+                <h3 class="sign-up">sign up</h3>
+            </div>
+            <form id="form" action="index.html" method="post">
+                <i class="fa-solid fa-user"></i>
+                <input id="name" type="text" placeholder="Name" pattern="([^\s][A-z0-9À-ž\s]+)" required>
+                <i class="fa-solid fa-envelope"></i>
+                <input id="email" type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    required>
+                <i class="fa-solid fa-lock"></i>
+                <input id="password" type="password" placeholder="Password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <i class="fa-solid fa-phone"></i>
+                <input id="phone" type="tel" placeholder="Phone Number" pattern="^(00201|\+201|01)[0-2,5]{1}[0-9]{8}$"
+                    required>
+
+
+                <div class="selectt">
+                    <i class="fa-solid fa-id-card"></i>
+                    <input class="idd" type="text" placeholder="ID"
+                        pattern="^([1-9]{1})([0-9]{2})([0-9]{2})([0-9]{2})([0-9]{2})[0-9]{3}([0-9]{1})[0-9]{1}$"
+                        maxlength="14" minlength="14" required>
+                    <select name="gender">
+                        <option selected disabled value="default" class="gender">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <input id="sign_up" type="submit" value="Sign Up">
+            </form>
+            <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/sign-in.js"></script>
+    <script src="js/all.min.js"></script>
+
+</body>
+
+</html>

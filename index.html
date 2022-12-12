@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsarly Sign In</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sign-in.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sign-container">
+            <div class="logo">
+                <img src="images/samsarly-logo-light.png" alt="samsarly-logo-light">
+            </div>
+            <div class="sign-text">
+                <h3 class="sign-in">sign in</h3>
+                <h3 class="sign-up"><a href="sign-up.html">sign up</a></h3>
+            </div>
+            <form id="form" action="/" method="post">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" placeholder="Email" id="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="password" placeholder="Password" id="password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <div>forget password ?</div>
+                <input type="submit" value="Sign In">
+
+                <div id="message">
+                    <h3>Password must contain the following:</h3>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="js/sign-in.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>
