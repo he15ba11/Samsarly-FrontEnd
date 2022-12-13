@@ -107,7 +107,7 @@ form svg {
   top: 175px;
 }
 .container .form-box form svg.fa-id-card {
-  top: 229px;
+  top: 230px;
   right: 300px;
 }
 
@@ -175,7 +175,7 @@ input[value="Sign Up"] {
     top: 162px;
   }
   .container .form-box form svg.fa-id-card {
-    top: 209px;
+    top: 210px;
   }
 }
 @media (max-width: 750px) {
