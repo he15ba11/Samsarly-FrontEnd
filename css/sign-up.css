@@ -107,7 +107,7 @@ form svg {
   top: 175px;
 }
 .container .form-box form svg.fa-id-card {
-  top: 233px;
+  top: 229px;
   right: 300px;
 }
 
@@ -175,8 +175,7 @@ input[value="Sign Up"] {
     top: 162px;
   }
   .container .form-box form svg.fa-id-card {
-    top: 212px;
-    right: 300px;
+    top: 209px;
   }
 }
 @media (max-width: 750px) {
@@ -186,18 +185,5 @@ input[value="Sign Up"] {
   }
   form{
     width:98%;
-  }
-  .container .form-box form svg.fa-envelope {
-    top: 60px;
-  }
-  .container .form-box form svg.fa-lock {
-    top: 110px;
-  }
-  .container .form-box form svg.fa-phone {
-    top: 162px;
-  }
-  .container .form-box form svg.fa-id-card {
-    top: 212px;
-    right: 300px;
   }
 }
